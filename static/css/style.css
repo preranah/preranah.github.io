@@ -4,7 +4,7 @@ body {
 	margin:0; padding:0; /* because defaults may not be consistent across browsers */
 	margin: 0 auto; width: 100%; text-align: center; /* to centre the content (PS. need ALL these specifications) */
 	background: #fff;
-	font: 100% 'Lora', serif;
+	font: 105% 'Lora', serif;
 	line-height: 1.4em;
 	font-weight: 400;
 }
