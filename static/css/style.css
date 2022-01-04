@@ -1,0 +1,127 @@
+@import url(http://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic);
+
+body {
+	margin:0; padding:0; /* because defaults may not be consistent across browsers */
+	margin: 0 auto; width: 100%; text-align: center; /* to centre the content (PS. need ALL these specifications) */
+	background: #fff;
+	font: 100% 'Lora', serif;
+	line-height: 1.4em;
+	font-weight: 400;
+}
+
+#container {
+	margin: 0 auto; 
+	max-width: 720px; 
+	padding:24px;
+	padding-bottom: 3em;
+	/* ^ : so the total width will be max 720+24+24 = 768px */
+	text-align:center;
+}
+
+@media screen and (max-width: 480px) {
+	body {
+		font-size:100%;
+	}
+	#container {
+		padding:5%;
+	}
+}
+
+#working{
+    text-align: center;
+    font-size: 200%;
+}
+
+img {
+	display:block;
+	max-width:100%;
+	max-height: 100%;
+}
+.section{
+	text-align:left;
+	margin: 0 auto;
+	width: 100%;
+}
+
+hr {
+	border:none; 
+	/* "border:none;" to eliminate the default "border: 1px inset;" attribute, 
+	as explained in: http://www.w3.org/TR/CSS2/sample.html */
+	border-top:#aaa dotted 1px;
+	margin: 3em auto;
+	padding:0;
+	max-width: 100%;
+}
+
+h1{
+	font-weight: 700;
+	font-style:italic;
+	font-size: 2em;
+	line-height: 1.1em;
+	margin-top: 1em;
+	margin-bottom: .8em;
+}
+h2{
+	font-size: 1.5em;
+	font-weight: 700;
+	font-style:italic;
+	margin-top: 1em;
+	margin-bottom: .8em;
+}
+h3{
+	font-size: 1em;
+	font-weight: 700;
+	font-style:italic;
+	margin-top: 1em;
+	margin-bottom: .8em;
+}
+p{
+	font-weight: 400;
+	margin-top: 1em;
+	margin-bottom: .8em;
+	padding-right:5%;
+}
+
+a {
+	color: inherit;
+	padding: 0 .125em; 
+	border-bottom: #777 dotted 1px; 
+	text-decoration:none;
+}
+a:hover{
+	background-color: rgba(255,221,51,.2);
+}
+a:active {
+	background-color: rgba(255,221,51,1);
+}
+
+
+/* the style for the icons*/
+.share-btn {
+    display: inline-block;
+	width:1.5em;
+	height:1.5em;
+    padding: .5em;
+	border-radius: 50%;
+	background:none;
+    border: 1px solid black;
+    text-align: center;
+	margin-right:.5em;
+	margin-top:.5em;
+}
+a.share-btn, a.share-btn:hover, a.share-btn:active {
+	text-decoration:none;
+	background:none;
+}
+a.share-btn:hover {background-color: rgba(255,221,51,.2);}
+a.share-btn:active {background-color: rgba(255,221,51,1);}
+
+.share-btn i { font-size:150%; position:relative; }
+i.fa-file{top: 0px; left:1px;}
+i.fa-linkedin {top: -2px; left:1px;}
+i.fa-github {top: 0px; left:1px;}
+i.fa-twitter {top:1px; left:1px;}
+i.fa-wordpress { /* not defined yet */ }
+i.fa-facebook { top:1px; }
+i.fa-envelope { top:0px; left:1px; }
+
